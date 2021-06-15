@@ -43,29 +43,31 @@ nav li a{
 
 /* jumbotron */
 .jumbotron{
-    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.overlay img{
     width: 100%;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.2);
+    height: 500px;
+    object-fit: cover;
 }
-
 /* overlay */
-.overlay{
+.overlay.container{
     margin-top: 30px;
     position: relative;
-    color: white;
 }
+  .overlay{
+      position: relative;
+      background-color: rgba(0, 0, 0, .2);
+      width: 100%;
+      object-fit: cover;
+  }  
 
-.overlay h3{
-position: absolute;
-bottom: 80px;
-left: 20px;
-}
-.overlay > p{
-    position: absolute;
-    bottom: 40px;
-    left: 20px; 
-}
+
 
 /*/overlay */
 
@@ -76,6 +78,7 @@ left: 20px;
     height: 30px;
     color: black;
     font-family: 'Montserrat', sans-serif;
+    font-size: large;
 }
 
 .hdr p{
@@ -104,31 +107,46 @@ footer p::after{
 .container{
     width: 100%;
     margin: 0% auto;
-    padding-bottom: 10px;
-    
+}
+aside img{
+    width: 100%;
 }
 
 aside.left{
-    width:calc((100% / 5) - 20px);
+    width:calc((100% / 5) - 20px) ;
     float: left;
 }
+
 aside.right{
     width:calc((100% / 5) - 20px) ;
     float: left;
+}
+.content img{
+   width: 100%;
+}
+
+.text{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    right: 50px;
+    color: whitesmoke;
+   
 }
 
  /* content */
 
  /* resizing img */
- aside,.content img{
-    
- }
+ 
  /* /resizing img */
 
  .content{
      width:calc(100% / 5 * 3) ;
      float: left;
      margin:0 20px;
+ }
+
+ .testo{
 
  }
 
