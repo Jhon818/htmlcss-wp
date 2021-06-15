@@ -48,6 +48,7 @@ nav li a{
     border-radius: 30px;
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 /* overlay */
 .overlay{
     margin-top: 30px;
@@ -89,8 +90,7 @@ footer{
     margin-top: 10px;
 }
 footer p{
-    position: absolute;
-    left:  50%;
+    text-align: center;
     color: grey; 
 }
 footer p::after{
@@ -118,6 +118,12 @@ aside.right{
 }
 
  /* content */
+
+ /* resizing img */
+ aside,.content img{
+    
+ }
+ /* /resizing img */
 
  .content{
      width:calc(100% / 5 * 3) ;
