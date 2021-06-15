@@ -49,7 +49,7 @@ nav li a{
     background-color: rgba(0, 0, 0, .2);
 }
 
-.overlay img{
+.overlay.container img{
     width: 100%;
     border-radius: 30px;
     height: 500px;
@@ -60,12 +60,19 @@ nav li a{
     margin-top: 30px;
     position: relative;
 }
-  .overlay{
+  .overlay-container{
       position: relative;
-      background-color: rgba(0, 0, 0, .2);
-      width: 100%;
-      object-fit: cover;
+      height: 200px;
+     
   }  
+  .overlay.banner{
+       
+       height: 300px;
+  }
+
+  .overlay img{
+      height: 200px;
+  }
 
 
 
@@ -115,11 +122,13 @@ aside img{
 aside.left{
     width:calc((100% / 5) - 20px) ;
     float: left;
+    padding-top: 30px;
 }
 
 aside.right{
     width:calc((100% / 5) - 20px) ;
     float: left;
+    padding-top: 30px;
 }
 .content img{
    width: 100%;
@@ -144,10 +153,20 @@ aside.right{
      width:calc(100% / 5 * 3) ;
      float: left;
      margin:0 20px;
+     padding-top: 30px;
  }
 
  .testo{
+     padding-top: 10px;
+     color: grey;
+ }
 
+ .testo h3{
+     color: black;
+ }
+
+ .jumbotron + img{
+     object-fit: cover;
  }
 
 
